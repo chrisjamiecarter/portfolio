@@ -1,59 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Portfolio Webpage</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
-    <link  href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <link href="./css/styles.css" rel="stylesheet" />
-  </head>
-  <body>
-    <nav id="navbar" class="nav">
-      <ul class="nav-list">
-        <li><a class="nav-link" href="#welcome-section">About</a></li>
-        <li><a class="nav-link" href="#projects">Projects</a></li>
-        <li><a class="nav-link" href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <section id="welcome-section" class="welcome-section">
-      <div class="welcome-header">
-        <h1>Hey I am Chris Carter</h1>
-        <p>a senior software engineer</p>
-      </div>
-    </section>
-    <section id="projects" class="projects-section">
-      <div class="projects-header">
-        <h2>Projects</h2>
-        <p>Here are some of my creations</p>
-        <hr />
-      </div>
-      <div class="projects-container">
-        <a href="https://github.com/cjc-sweatbox/Cjc.Sbx.AdventOfCode2022" target="_blank" class="project project-tile">
-          <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/map.jpg" alt="project">
-          <p class="project-title">Advent of Code 2022</p>
-        </a>        
-        <a href="https://github.com/cjc-sweatbox/AdventOfCode2023" target="_blank" class="project project-tile">
-          <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/wiki.png" alt="project">
-          <p class="project-title">Advent of Code 2023</p>
-        </a>        
-      </div>
-    </section>
-    <section id="contact" class="contact-section">
-      <div class="contact-header">
-        <h2>Contact</h2>
-        <p>Lets collaborate</p>
-      </div>
-      <div class="contact-links">
-        <a href="https://www.facebook.com/profile.php?id=100009295014806" target="_blank" class="button contact-details"><i class="fab fa-facebook-square"></i> Facebook</a>
-        <a id="profile-link" href="https://github.com/cjc-sweatbox" target="_blank" class="button contact-details"><i class="fab fa-github"></i> GitHub</a>
-        <a href="https://x.com/SweatboxGaming" target="_blank" class="button contact-details"><i class="fab fa-twitter"></i> Twitter</a>
-        <a href="mailto:sweatboxhd@gmail.com" class="button contact-details"><i class="fas fa-at"></i> Send a mail</a>
-        <a href="tel:07920428185" class="button contact-details"><i class="fas fa-mobile-alt"></i> Call me</a>
-      </div>
-    </section>
-    <footer>
-      <p class="right">© Chris Carter 2024</p>
-    </footer>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
+  <title>Chris Carter | Senior Software Engineer</title>
+  <meta name="description" content="Portfolio for Chris Carter" />
+  <meta name="author" content="Chris Carter" />
+  <link href="./css/styles.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="preconnect" />
+  <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="preconnect" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
+  <nav id="navbar" class="nav">
+    <ul class="nav-list">
+      <li><a class="nav-link" href="https://cjc-sweatbox.github.io/portfolio">Home</a></li>
+      <li><a class="nav-link" href="#welcome-section">About</a></li>
+      <li><a class="nav-link" href="#projects">Projects</a></li>
+      <li><a class="nav-link" href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <section id="welcome-section" class="welcome-section">
+    <div class="welcome-header">
+      <h1>Hey, I'm Chris Carter</h1>
+      <p>a senior software engineer</p>
+    </div>
+  </section>
+  <section id="projects" class="projects-section">
+    <div class="projects-header">
+      <h2>Projects</h2>
+      <p>Here are some of my creations</p>
+      <hr />
+    </div>
+    <div class="projects-container">
+      <a href="https://github.com/cjc-sweatbox/math-game" target="_blank" class="project project-tile">
+        <img class="project-image" src="./assets/math-game-logo.png" alt="math game project">
+        <p class="project-title">Math Game</p>
+      </a>
+      <a href="https://github.com/cjc-sweatbox/calculator" target="_blank" class="project project-tile">
+        <img class="project-image" src="./assets/calculator-logo.png" alt="calculator project">
+        <p class="project-title">Calculator</p>
+      </a>
+      <a href="https://github.com/cjc-sweatbox/habit-logger" target="_blank" class="project project-tile">
+        <img class="project-image" src="./assets/habit-logger-logo.png" alt="habit logger project">
+        <p class="project-title">Habit Logger</p>
+      </a>
+      <a href="https://github.com/cjc-sweatbox/coding-tracker" target="_blank" class="project project-tile">
+        <img class="project-image" src="./assets/coding-tracker-logo.png" alt="coding tracker project">
+        <p class="project-title">Coding Tracker</p>
+      </a>
+      <a href="https://github.com/cjc-sweatbox/flashcards" target="_blank" class="project project-tile">
+        <img class="project-image" src="./assets/flashcards-logo.png" alt="flashcards project">
+        <p class="project-title">Flashcards</p>
+      </a>
+      <a href="https://github.com/cjc-sweatbox/drinks-info" target="_blank" class="project project-tile">
+        <img class="project-image" src="./assets/drinks-info-logo.png" alt="drinks info project">
+        <p class="project-title">Drinks Info</p>
+      </a>
+      <a href="https://github.com/cjc-sweatbox/phonebook" target="_blank" class="project project-tile">
+        <img class="project-image" src="./assets/phonebook-logo.png" alt="phonebook project">
+        <p class="project-title">Phonebook</p>
+      </a>
+      <a href="https://github.com/cjc-sweatbox/shifts-logger" target="_blank" class="project project-tile">
+        <img class="project-image" src="./assets/shifts-logger-logo.png" alt="shifts logger project">
+        <p class="project-title">Shifts Logger</p>
+      </a>
+      <a href="https://github.com/cjc-sweatbox/exercise-tracker" target="_blank" class="project project-tile">
+        <img class="project-image" src="./assets/exercise-tracker-logo.png" alt="exercise tracker project">
+        <p class="project-title">Exercise Tracker</p>
+      </a>
+      <a href="https://github.com/cjc-sweatbox/sports-results" target="_blank" class="project project-tile">
+        <img class="project-image" src="./assets/sports-results-logo.png" alt="sports results project">
+        <p class="project-title">Sports Results</p>
+      </a>
+      <a href="https://github.com/cjc-sweatbox/excel-reader" target="_blank" class="project project-tile">
+        <img class="project-image" src="./assets/excel-reader-logo.png" alt="excel reader project">
+        <p class="project-title">Excel Reader</p>
+      </a>
+    </div>
+  </section>
+  <section id="contact" class="contact-section">
+    <div class="contact-header">
+      <h2>Contact</h2>
+      <p>Lets collaborate</p>
+    </div>
+    <div class="contact-links">
+      <a id="contact-link-linkedin" href="https://www.linkedin.com/in/chris-carter-1495801aa" target="_blank" class="button contact-details"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a id="contact-link-github" href="https://github.com/cjc-sweatbox" target="_blank" class="button contact-details"><i class="fab fa-github"></i> GitHub</a>
+      <a id="contact-link-twitter" href="https://x.com/SweatboxGaming" target="_blank" class="button contact-details"><i class="fab fa-twitter"></i> Twitter</a>
+      <a id="contact-link-email" href="mailto:chrisjamiecarter@gmail.com" class="button contact-details"><i class="fas fa-at"></i> Email</a>
+    </div>
+  </section>
+  <footer>
+    <p class="right">
+      © Copyright
+      <script>
+        document.write(new Date().getFullYear());
+      </script>
+      . Made by
+      <a rel="noreferrer" target="_blank" href="https://github.com/cjc-sweatbox">Chris Carter</a>
+    </p>
+  </footer>
+</body>
+
 </html>
