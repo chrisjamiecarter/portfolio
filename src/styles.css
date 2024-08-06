@@ -1,0 +1,258 @@
+:root {
+  --palette-white: #F5F5F5;
+  --palette-black: #0A0A0A;
+  --palette-gray: #1F1F1F;
+  
+  --palette-color-one: #06090F;
+  --palette-color-two: #333135;
+  --palette-color-three: #555358;
+  --palette-color-four: #C6CA53;
+  --palette-color-five: #C9DCB3;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  /*
+  border: 1px solid gray;
+  */
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 62.5%;
+  font-style: normal; 
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: var(--palette-white);
+}
+
+h1 {
+  font-size: 6rem;
+  font-weight: bolder;
+}
+
+h2 {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+hr {
+  border: 1px solid var(--palette-gray);
+  width: 50%;
+  margin-bottom: 2rem;
+}
+
+.nav {
+  width: 100%;
+  height: 75px;
+  background-color: var(--palette-color-one);
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  z-index: 20;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 100%;
+  margin-right: 2rem;
+  list-style: none;
+}
+
+.nav-link {
+  display: block;
+  font-size: 1.5rem;
+  padding: 2rem;
+}
+
+.nav-link:hover {
+  color: var(--palette-color-four);
+  transition: color 0.5s ease-in;
+}
+
+.welcome-section {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    -135deg,
+    var(--palette-color-two),
+    var(--palette-color-three)
+  );
+  text-align: center;
+}
+
+.welcome-header {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.welcome-header h1 {
+  color: var(--palette-color-four);
+  text-shadow: 2px 2px 1px var(--palette-black);
+}
+
+.welcome-header p {
+  color: var(--palette-color-five);
+  font-size: 2rem;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.projects-section {
+  width: 100%;
+  background: linear-gradient(
+    -135deg,
+    var(--palette-color-five) 10%,
+    var(--palette-color-four),
+    var(--palette-color-five) 90%
+  );
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.projects-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-header h2 {
+  color: var(--palette-black);
+  text-shadow: 1px 1px 1px var(--palette-white);
+}
+
+.projects-header p {
+  color: var(--palette-gray);
+  margin: 10px;
+  font-size: 1.4rem;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  
+}
+
+.project {
+  background: var(--palette-color-three);
+  box-shadow: 1px 1px 2px var(--palette-color-two);
+  border-radius: 2px;
+}
+
+.project-image {
+  height: calc(100% - 6.8rem);
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-title {
+  font-size: 2rem;
+  padding: 2rem 0.5rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.contact-section {
+  height: calc(100vh - 125px);
+  background: linear-gradient(
+    -135deg,
+    var(--palette-color-three),
+    var(--palette-color-two)
+  );
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-header h2 {
+  color: var(--palette-color-four);
+  text-shadow: 2px 2px 1px var(--palette-black);
+}
+
+.contact-header p {
+  color: var(--palette-color-five);
+  font-size: 2rem;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+}
+
+.contact-details {
+  font-size: 2rem;
+  transition: transform 0.3s ease-out;
+  text-shadow: 2px 2px 1px var(--palette-color-two);
+}
+
+.contact-details:hover {
+  transform: scale(1.5);
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: var(--palette-color-one);
+}
+
+footer p {
+  color: var(--palette-white);
+  padding: 10px;
+}
+
+footer .right {
+  position: absolute;
+  right: 0px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
