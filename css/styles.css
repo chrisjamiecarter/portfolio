@@ -374,8 +374,8 @@ textarea {
 }
 
 .project {
-  background: var(--palette-color-three);
-  box-shadow: 1px 1px 2px var(--palette-color-two);
+  background: rgba(153, 153, 153, 0.2); /*var(--palette-color-three);*/
+  /*box-shadow: 1px 1px 2px var(--palette-color-two);*/
   border-radius: 2px;
 }
 
