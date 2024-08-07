@@ -374,8 +374,7 @@ textarea {
 }
 
 .project {
-  background: rgba(153, 153, 153, 0.2); /*var(--palette-color-three);*/
-  /*box-shadow: 1px 1px 2px var(--palette-color-two);*/
+  background: rgba(153, 153, 153, 0.2);
   border-radius: 2px;
 }
 
@@ -394,7 +393,6 @@ textarea {
   background: linear-gradient(to right, rgba(245,245,245,0.8), rgba(245,245,245,0.8)),url(../assets/page-background-light.png);
   background-size: cover;
   background-position: center;
-  transform: rotate(180deg);
 }
 
 .contact-links-container {
