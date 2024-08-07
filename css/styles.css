@@ -100,7 +100,7 @@ hr {
     -135deg,
     var(--palette-color-two),
     var(--palette-color-three)
-  ),url(./assets/dark-background.png);
+  ),url(../assets/dark-background.png);
   text-align: center;
 }
 
