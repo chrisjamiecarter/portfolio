@@ -117,17 +117,17 @@ textarea {
     background: #7843E9 !important
   }
 
-  .heading-section-main::after {
-    content: '';
-    position: absolute;
-    top: calc(100% + 1.5rem);
-    height: 5px;
-    width: 3rem;
-    background: #7843E9;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 5px
-  }
+.heading-section-main::after {
+  content: '';
+  position: absolute;
+  top: calc(100% + 1.5rem);
+  height: 5px;
+  width: 3rem;
+  background: #7843E9;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px
+}
 
 @media only screen and (max-width: 37.5em) {
   .heading-section-main::after {
@@ -385,11 +385,30 @@ textarea {
   object-fit: cover;
 }
 
-.contact {
+.contact-section {
   background: linear-gradient(to right, rgba(245,245,245,0.8), rgba(245,245,245,0.8)),url(../assets/page-background-light.png);
   background-size: cover;
   background-position: center
 }
+
+.contact-links-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-link {
+  font-size: 2rem;
+  transition: transform 0.3s ease-out;
+  text-shadow: 2px 2px 1px rgba(0,0,0,0.1);
+}
+
+  .contact-link:hover {
+    transform: scale(1.5);
+  }
 
 .header {
   position: fixed;
@@ -397,10 +416,10 @@ textarea {
   z-index: 1000;
   background: #000;
   background: #fff;
-  box-shadow: 0 10px 100px rgba(0,0,0,0.1)
+  box-shadow: 0 10px 100px rgba(0,0,0,0.1);
 }
 
-.header_content {
+.header-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -408,7 +427,7 @@ textarea {
 }
 
 @media only screen and (max-width: 56.25em) {
-  .header_content {
+  .header-content {
     padding: 0 2rem
   }
 }
@@ -514,24 +533,24 @@ textarea {
   }
 }
 
-.main-footer-row main-footer-row-1 {
+.main-footer-row-1 {
   order: 2
 }
 
 @media only screen and (max-width: 56.25em) {
-  .main-footer-row main-footer-row-1 {
+  .main-footer-row-1 {
     margin-bottom: 5rem
   }
 }
 
-.main-footer-row main-footer-row-2 {
+.main-footer-row-2 {
   width: 40%;
   order: 1;
   max-width: 50rem
 }
 
 @media only screen and (max-width: 56.25em) {
-  .main-footer-row main-footer-row-2 {
+  .main-footer-row-2 {
     width: 100%
   }
 }
@@ -552,7 +571,7 @@ textarea {
   width: 2.5rem
 }
 
-.main-footer-icon-margin-right-none {
+.margin-right-none {
   margin-right: 0
 }
 
