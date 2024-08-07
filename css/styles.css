@@ -691,7 +691,7 @@ textarea {
     -webkit-animation: wheel 1.3s infinite
   }
 
-.image-hide {
+.theme-icon-dark, .theme-icon-light {
   display: none;
 }
 
