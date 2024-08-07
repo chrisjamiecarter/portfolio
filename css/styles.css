@@ -691,6 +691,18 @@ textarea {
     -webkit-animation: wheel 1.3s infinite
   }
 
+.image-hide {
+  display: none;
+}
+
+[data-theme="dark"].theme-icon-dark {
+  display: inline;
+}
+
+[data-theme="light"].theme-icon-light {
+  display: inline;
+}
+
 @keyframes wheel {
   to {
     opacity: 0;
