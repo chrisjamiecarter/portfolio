@@ -1,3 +1,52 @@
+:root {
+  --background-color-light: #FAFAFA;
+  --background-color-dark: #EFEFEF;
+  --text-color-dark: #111111;
+  --text-color-medium: #333333;
+  --text-color-light: #555555;
+  --accent-color: #D7093D;
+  --accent-color-transparent: #D7093D33;
+  --background-linear-gradient: linear-gradient(to right, rgba(239,239,239,0.8), rgba(250,250,250,0.8));
+  --background-image: url(../assets/page-background-light.png);
+  --icon-brand-github: url(../assets/icon-brand-github-dark.svg);
+  --icon-brand-linkedin: url(../assets/icon-brand-linkedin-dark.svg);
+  --icon-brand-x-twitter: url(../assets/icon-brand-x-twitter-dark.svg);
+  --icon-envelope: url(../assets/icon-envelope-dark.svg);
+  --icon-theme: url(../assets/icon-moon-dark.svg);
+}
+
+html[data-theme="light"] {
+  --background-color-light: #FAFAFA;
+  --background-color-dark: #EFEFEF;
+  --text-color-dark: #111111;
+  --text-color-medium: #333333;
+  --text-color-light: #555555;
+  --accent-color: #D7093D;
+  --background-linear-gradient: linear-gradient(to right, rgba(239,239,239,0.8), rgba(250,250,250,0.8));
+  --background-image: url(../assets/page-background-light.png);
+  --icon-brand-github: url(../assets/icon-brand-github-dark.svg);
+  --icon-brand-linkedin: url(../assets/icon-brand-linkedin-dark.svg);
+  --icon-brand-x-twitter: url(../assets/icon-brand-x-twitter-dark.svg);
+  --icon-envelope: url(../assets/icon-envelope-dark.svg);
+  --icon-theme: url(../assets/icon-moon-dark.svg);
+}
+
+html[data-theme="dark"] {
+  --background-color-light: #0A0A0A;
+  --background-color-dark: #141414;
+  --text-color-dark: #F5F5F5;
+  --text-color-medium: #D6D6D6;
+  --text-color-light: #ADADAD;
+  --accent-color: #F73B6A;
+  --background-linear-gradient: linear-gradient(to right, rgba(10,10,10,0.8), rgba(20,20,20,0.8));
+  --background-image: url(../assets/page-background-dark.png);
+  --icon-brand-github: url(../assets/icon-brand-github-light.svg);
+  --icon-brand-linkedin: url(../assets/icon-brand-linkedin-light.svg);
+  --icon-brand-x-twitter: url(../assets/icon-brand-x-twitter-light.svg);
+  --icon-envelope: url(../assets/icon-envelope-lightark.svg);
+  --icon-theme: url(../assets/icon-sun-light.svg);
+}
+
 *, *::after, *::before {
   margin: 0;
   padding: 0;
@@ -65,7 +114,7 @@ textarea {
   text-transform: uppercase;
   letter-spacing: 3px;
   text-align: center;
-  color: #111;
+  color: var(--text-color-dark);
   font-weight: 800
 }
 
@@ -104,17 +153,17 @@ textarea {
   text-align: center;
   margin-bottom: 3.5rem;
   position: relative;
-  color: #111
+  color: var(--text-color-dark);
 }
 
 .heading-section-main-light {
-  color: #111;
+  color: var(--text-color-dark);
   font-weight: 800
 }
 
   .heading-section-main-light::after {
     content: '';
-    background: #7843E9 !important
+    background: var(--accent-color) !important;
   }
 
 .heading-section-main::after {
@@ -123,7 +172,7 @@ textarea {
   top: calc(100% + 1.5rem);
   height: 5px;
   width: 3rem;
-  background: #7843E9;
+  background: var(--accent-color);
   left: 50%;
   transform: translateX(-50%);
   border-radius: 5px
@@ -138,7 +187,7 @@ textarea {
 .heading-section-subtitle {
   display: block;
   text-align: center;
-  color: #555;
+  color: var(--text-color-medium);
   font-size: 2rem;
   font-weight: 500;
   max-width: 80rem;
@@ -148,12 +197,12 @@ textarea {
 
 @media only screen and (max-width: 37.5em) {
   .heading-section-subtitle {
-    font-size: 1.8rem
+    font-size: 1.8rem;
   }
 }
 
 .heading-section-subtitle-light {
-  color: #333
+  color: var(--text-color-light);
 }
 
 .heading-small {
@@ -169,14 +218,14 @@ textarea {
 }
 
 .btn {
-  background: #7843E9;
-  color: #fff;
+  background: var(--accent-color);
+  color: var(--background-color-light);
   text-transform: uppercase;
   letter-spacing: 1px;
   display: inline-block;
   font-weight: 700;
   border-radius: 5px;
-  box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15);
+  box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15); /*TODO*/
   transition: transform .3s
 }
 
@@ -194,9 +243,10 @@ textarea {
   font-size: 1.6rem
 }
 
+/*REVIEW*/
 .btn-theme {
-  background: #7843E9;
-  color: #fff
+  background: var(--accent-color);
+  color: var(--background-color-light);
 }
 
 .section-pad {
@@ -210,7 +260,7 @@ textarea {
 }
 
 .text-primary {
-  color: #333;
+  color: var(--text-color-medium);
   font-size: 2.2rem;
   text-align: center;
   width: 100%;
@@ -224,8 +274,8 @@ textarea {
 }
 
 .welcome-section {
-  color: #fff;
-  background: linear-gradient(to right, rgba(245,245,245,0.8), rgba(245,245,245,0.8)),url(../assets/page-background-light.png);
+  color: var(--background-color-light);
+  background: var(--background-linear-gradient),var(--background-image);
   background-position: center;
   height: 100vh;
   min-height: 80rem;
@@ -244,9 +294,9 @@ textarea {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: #fff;
-  box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
-  padding: .5rem
+  background: var(--background-color-light);
+  box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px; /*TODO*/
+  padding: .5rem;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -281,7 +331,7 @@ textarea {
 }
 
   .welcome-section-social-link:hover {
-    background: rgba(120,67,233,0.2)
+    background: var(--accent-color-transparent);
   }
 
 .welcome-section-social-icon {
@@ -317,7 +367,7 @@ textarea {
 }
 
 .about-section {
-  background: #fafafa
+  background: var(--background-color-light);
 }
 
 .about-content {
@@ -347,7 +397,7 @@ textarea {
 
 .about-content-details-paragraph {
   font-size: 1.8rem;
-  color: #666;
+  color: var(--text-color-light);
   max-width: 60rem;
   line-height: 1.7;
   margin-bottom: 1rem
@@ -360,7 +410,7 @@ textarea {
   .about-content-details-paragraph a {
     text-decoration: underline;
     font-weight: 700;
-    color: #7843E9;
+    color: var(--accent-color);
     margin: 0 3px
   }
 
@@ -374,7 +424,7 @@ textarea {
 }
 
 .project {
-  background: rgba(153, 153, 153, 0.2);
+  background: rgba(153, 153, 153, 0.2); /*TODO*/
   border-radius: 2px;
 }
 
@@ -390,7 +440,7 @@ textarea {
 }
 
 .contact-section {
-  background: linear-gradient(to right, rgba(245,245,245,0.8), rgba(245,245,245,0.8)),url(../assets/page-background-light.png);
+  background: var(--background-linear-gradient),var(--background-image);
   background-size: cover;
   background-position: center;
 }
@@ -420,9 +470,8 @@ textarea {
   position: fixed;
   width: 100%;
   z-index: 1000;
-  background: #000;
-  background: #fff;
-  box-shadow: 0 10px 100px rgba(0,0,0,0.1);
+  background: var(--background-color-light);
+  box-shadow: 0 10px 100px rgba(0,0,0,0.1); /*REVIEW*/
 }
 
 .header-content {
@@ -442,12 +491,12 @@ textarea {
   display: flex;
   align-items: center;
   cursor: pointer;
-  color: #333;
+  color: var(--text-color-medium);
   transition: color .3s
 }
 
   .header-logo-container:hover {
-    color: #7843E9
+    color: var(--accent-color);
   }
 
 .header-logo-image-container {
@@ -456,7 +505,7 @@ textarea {
   border-radius: 50px;
   overflow: hidden;
   margin-right: 1.5rem;
-  background: #7843E9
+  background: var(--accent-color);
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -498,7 +547,7 @@ textarea {
   padding: 2.2rem 3rem;
   display: inline-block;
   font-size: 1.6rem;
-  color: #333;
+  color: var(--text-color-medium);
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 700;
@@ -506,7 +555,7 @@ textarea {
 }
 
   .header-navbar-link:hover {
-    color: #7843E9
+    color: var(--accent-color);
   }
 
 @media only screen and (max-width: 56.25em) {
@@ -517,8 +566,8 @@ textarea {
 }
 
 .main-footer {
-  background: #000;
-  color: #fff
+  background: var(--text-color-dark);
+  color: var(--background-color-light);
 }
 
 .main-footer-upper {
@@ -563,7 +612,7 @@ textarea {
 
 .main-footer-short-description {
   margin-top: 2rem;
-  color: #eee;
+  color: var(--text-color-medium);
   font-size: 1.5rem;
   line-height: 1.7
 }
@@ -583,8 +632,8 @@ textarea {
 
 .main-footer-lower {
   padding: 4rem 0;
-  border-top: 1px solid #444;
-  color: #eee;
+  border-top: 1px solid var(--text-color-light);
+  color: var(--background-color-dark);
   font-size: 1.2rem;
   text-align: left;
   text-align: center
@@ -612,16 +661,16 @@ textarea {
   margin-bottom: 1.5rem;
   margin-right: 1.5rem;
   font-size: 1.6rem;
-  background: rgba(153,153,153,0.2);
+  background: var(--accent-color-transparent);
   border-radius: 5px;
   font-weight: 600;
-  color: #666
+  color: var(--text-color-light);
 }
 
 .mouse {
   width: 25px;
   height: 40px;
-  border: 2px solid #333;
+  border: 2px solid var(--text-color-medium);
   border-radius: 60px;
   position: relative;
   overflow: hidden
@@ -635,7 +684,7 @@ textarea {
     top: 7px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #333;
+    background-color: var(--text-color-medium);
     border-radius: 50%;
     opacity: 1;
     animation: wheel 1.3s infinite;
