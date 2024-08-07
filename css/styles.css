@@ -691,16 +691,13 @@ textarea {
     -webkit-animation: wheel 1.3s infinite
   }
 
-.theme-icon-dark {
-  display: none;
+[data-theme="dark"] .theme-icon-dark,
+[data-theme="light"] .theme-icon-light {
+  display: block !important;
 }
 
-[data-theme="dark"].theme-icon-dark {
-  display: inline;
-}
-
-[data-theme="light"].theme-icon-light {
-  display: inline;
+.div-hide {
+  display: none !important;
 }
 
 @keyframes wheel {
