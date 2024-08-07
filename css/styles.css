@@ -99,9 +99,11 @@ hr {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: #fff;
-  box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
-  padding: .5rem
+  background: #0A0A0A;
+  box-shadow: rgba(51, 49, 53,0.2) 0px 7px 29px 0px;
+  padding: .5rem;
+  box-sizing: inherit;
+  font-family: inherit;
 }
 
 .welcome-section-social {
@@ -116,8 +118,12 @@ hr {
   border-radius: 5px
 }
 
-.welcome-section-social-link:hover {
-  background: rgba(120,67,233,0.2)
+  .welcome-section-social-link:hover {
+    background: rgba(85, 83, 88,0.2)
+  }
+
+.welcome-section-social-icon {
+  width: 100%
 }
 
 .welcome-section-mouse-scroll-continue {
@@ -277,7 +283,9 @@ footer .right {
   border: 2px solid #333;
   border-radius: 60px;
   position: relative;
-  overflow: hidden
+  overflow: hidden;
+  box-sizing: inherit;
+  font-family: inherit;
 }
 
   .mouse::before {
