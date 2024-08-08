@@ -361,7 +361,6 @@ textarea {
   height: 100%; /* Make sure the container has some height to center the content properly */
   text-align: center; /* Center text content */
 }
-}
 
 .about-section {
   background: var(--background-color-light);
