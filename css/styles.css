@@ -225,6 +225,7 @@ textarea {
   }
 
 .btn-big {
+  min-width: 260px;
   padding: 1.5rem 8rem;
   font-size: 2rem
 }
@@ -456,7 +457,7 @@ textarea {
   background-position: center;
 }
 
-.contact-section-social-icon {
+.icon-small {
   height: 16px;
   width: 16px;
 }
