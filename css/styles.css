@@ -1,50 +1,28 @@
 :root {
-  --background-color-light: #FAFAFA;
-  --background-color-dark: #EFEFEF;
-  --text-color-dark: #111111;
-  --text-color-medium: #333333;
-  --text-color-light: #555555;
-  --accent-color: #D7093D;
-  --accent-color-transparent: #D7093D33;
-  --background-linear-gradient: linear-gradient(to right, rgba(239,239,239,0.8), rgba(250,250,250,0.8));
-  --background-image: url(../assets/page-background-light.png);
-  --icon-brand-github: url(../assets/icon-brand-github-dark.svg);
-  --icon-brand-linkedin: url(../assets/icon-brand-linkedin-dark.svg);
-  --icon-brand-x-twitter: url(../assets/icon-brand-x-twitter-dark.svg);
-  --icon-envelope: url(../assets/icon-envelope-dark.svg);
-  --icon-theme: url(../assets/icon-moon-dark.svg);
+  --accent-color: #D7093D; /* Crimson */
+  --accent-color-transparent: #D7093D33; /* Crimson 20% */
+  --footer-background-color: #111111; /* Night */
+  --footer-text-color-light: #FAFAFA; /* Seasalt */
+  --footer-text-color-medium: #333333; /* Jet */
+  --footer-text-color-dark: #555555; /* Davy's Gray */
 }
 
 html[data-theme="light"] {
-  --background-color-light: #FAFAFA;
-  --background-color-dark: #EFEFEF;
-  --text-color-dark: #111111;
-  --text-color-medium: #333333;
-  --text-color-light: #555555;
-  --accent-color: #D7093D;
-  --background-linear-gradient: linear-gradient(to right, rgba(239,239,239,0.8), rgba(250,250,250,0.8));
-  --background-image: url(../assets/page-background-light.png);
-  --icon-brand-github: url(../assets/icon-brand-github-dark.svg);
-  --icon-brand-linkedin: url(../assets/icon-brand-linkedin-dark.svg);
-  --icon-brand-x-twitter: url(../assets/icon-brand-x-twitter-dark.svg);
-  --icon-envelope: url(../assets/icon-envelope-dark.svg);
-  --icon-theme: url(../assets/icon-moon-dark.svg);
+  --background-color-light: #FAFAFA; /* Seasalt */
+  --background-color-dark: #EFEFEF; /* Anti-Flash White */
+  --text-color-dark: #111111; /* Night */
+  --text-color-medium: #333333; /* Jet */
+  --text-color-light: #555555; /* Davy's Gray */
+  --background-linear-gradient: linear-gradient(to right, #FAFAFACC, #EFEFEFCC); /* Seasalt 80% into Anti-Flash White 80% */
 }
 
 html[data-theme="dark"] {
-  --background-color-light: #0A0A0A;
-  --background-color-dark: #141414;
-  --text-color-dark: #F5F5F5;
-  --text-color-medium: #D6D6D6;
-  --text-color-light: #ADADAD;
-  --accent-color: #F73B6A;
-  --background-linear-gradient: linear-gradient(to right, rgba(10,10,10,0.8), rgba(20,20,20,0.8));
-  --background-image: url(../assets/page-background-dark.png);
-  --icon-brand-github: url(../assets/icon-brand-github-light.svg);
-  --icon-brand-linkedin: url(../assets/icon-brand-linkedin-light.svg);
-  --icon-brand-x-twitter: url(../assets/icon-brand-x-twitter-light.svg);
-  --icon-envelope: url(../assets/icon-envelope-lightark.svg);
-  --icon-theme: url(../assets/icon-sun-light.svg);
+  --background-color-light: #0A0A0A; /* Night */
+  --background-color-dark: #141414; /* Night */
+  --text-color-dark: #F5F5F5; /* White Smoke */
+  --text-color-medium: #D6D6D6; /* Timberwolf */
+  --text-color-light: #ADADAD; /* Silver */
+  --background-linear-gradient: linear-gradient(to right, #0A0A0ACC, #141414CC); /* Night 80% into Night 80% */
 }
 
 *, *::after, *::before {
@@ -414,6 +392,10 @@ textarea {
     margin: 0 3px
   }
 
+.projects-section {
+  background: var(--background-color-light);
+}
+
 .projects-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -443,6 +425,10 @@ textarea {
   background: var(--background-linear-gradient),var(--background-image);
   background-size: cover;
   background-position: center;
+}
+
+.contact-section-social-icon {
+  width: 100%
 }
 
 .contact-links-container {
@@ -566,8 +552,8 @@ textarea {
 }
 
 .main-footer {
-  background: var(--text-color-dark);
-  color: var(--background-color-light);
+  background: var(--footer-background-color);
+  color: var(--footer-text-color-light);
 }
 
 .main-footer-upper {
@@ -612,7 +598,7 @@ textarea {
 
 .main-footer-short-description {
   margin-top: 2rem;
-  color: var(--text-color-medium);
+  color: var(--footer-text-color-medium);
   font-size: 1.5rem;
   line-height: 1.7
 }
@@ -632,8 +618,8 @@ textarea {
 
 .main-footer-lower {
   padding: 4rem 0;
-  border-top: 1px solid var(--text-color-light);
-  color: var(--background-color-dark);
+  border-top: 1px solid var(--footer-text-color-light);
+  color: var(--footer-background-color);
   font-size: 1.2rem;
   text-align: left;
   text-align: center
@@ -661,7 +647,7 @@ textarea {
   margin-bottom: 1.5rem;
   margin-right: 1.5rem;
   font-size: 1.6rem;
-  background: var(--accent-color-transparent);
+  background: var(--text-color-medium);
   border-radius: 5px;
   font-weight: 600;
   color: var(--text-color-light);
