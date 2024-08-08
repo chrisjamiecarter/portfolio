@@ -1,28 +1,30 @@
 :root {
   --accent-color: #D7093D; /* Crimson */
   --accent-color-transparent: #D7093D33; /* Crimson 20% */
-  --footer-background-color: #111111; /* Night */
-  --footer-text-color-light: #FAFAFA; /* Seasalt */
-  --footer-text-color-medium: #333333; /* Jet */
-  --footer-text-color-dark: #555555; /* Davy's Gray */
+  --footer-background-color: #0A0A0A; /* Night */
+  --footer-text-color-light: #F8F8F8; /* Seasalt */
+  --footer-text-color-medium: #EFEFEF; /* Anti-Flash White */
+  --footer-text-color-dark: #D8D8D8; /* Timberwolf */
 }
 
 html[data-theme="light"] {
-  --background-color-light: #FAFAFA; /* Seasalt */
+  --background-color-light: #F8F8F8; /* Seasalt */
   --background-color-dark: #EFEFEF; /* Anti-Flash White */
-  --text-color-dark: #111111; /* Night */
-  --text-color-medium: #333333; /* Jet */
-  --text-color-light: #555555; /* Davy's Gray */
-  --background-linear-gradient: linear-gradient(to right, #FAFAFACC, #EFEFEFCC); /* Seasalt 80% into Anti-Flash White 80% */
+  --background-image: url(../assets/page-background-light.png);
+  --text-color-dark: #0A0A0A; /* Night */
+  --text-color-medium: #1B1B1B; /* Eerie black */
+  --text-color-light: #2C2C2C; /* Jet */
+  --background-linear-gradient: linear-gradient(to right, #F8F8F8CC, #EFEFEFCC); /* Seasalt 80% into Anti-Flash White 80% */
 }
 
 html[data-theme="dark"] {
   --background-color-light: #0A0A0A; /* Night */
-  --background-color-dark: #141414; /* Night */
-  --text-color-dark: #F5F5F5; /* White Smoke */
-  --text-color-medium: #D6D6D6; /* Timberwolf */
-  --text-color-light: #ADADAD; /* Silver */
-  --background-linear-gradient: linear-gradient(to right, #0A0A0ACC, #141414CC); /* Night 80% into Night 80% */
+  --background-color-dark: #1B1B1B; /* Eerie black */
+  --background-image: url(../assets/page-background-dark.png);
+  --text-color-dark: #F8F8F8; /* Seasalt */
+  --text-color-medium: #EFEFEF; /* Anti-Flash White */
+  --text-color-light: #D8D8D8; /* Timberwolf */
+  --background-linear-gradient: linear-gradient(to right, #0A0A0ACC, #1B1B1BCC); /* Night 80% into Eerie black 80% */
 }
 
 *, *::after, *::before {
@@ -428,7 +430,8 @@ textarea {
 }
 
 .contact-section-social-icon {
-  width: 100%
+  height: 16px;
+  width: 16px;
 }
 
 .contact-links-container {
@@ -618,8 +621,8 @@ textarea {
 
 .main-footer-lower {
   padding: 4rem 0;
-  border-top: 1px solid var(--footer-text-color-light);
-  color: var(--footer-background-color);
+  border-top: 1px solid var(--footer-text-color-dark);
+  color: var(--footer-text-color-medium);
   font-size: 1.2rem;
   text-align: left;
   text-align: center
@@ -647,10 +650,10 @@ textarea {
   margin-bottom: 1.5rem;
   margin-right: 1.5rem;
   font-size: 1.6rem;
-  background: var(--text-color-medium);
+  background: var(--text-color-light);
   border-radius: 5px;
   font-weight: 600;
-  color: var(--text-color-light);
+  color: var(--text-color-medium);
 }
 
 .mouse {
