@@ -9,13 +9,13 @@ toggleTheme.onclick = function () {
     if (currentTheme === "light") {
         targetTheme = "dark";
     }
-    document.documentElement.setAttribute('data-theme', targetTheme)
+    document.documentElement.setAttribute('data-theme', targetTheme);
     localStorage.setItem('theme', targetTheme);
 };
 
 // Listener to go back to top if header logo clicked.
-const headerLogoConatiner = document.querySelector('.header-logo-container')
+const headerLogoConatiner = document.querySelector('.header-logo-container');
 
 headerLogoConatiner.addEventListener('click', () => {
-    location.href = '/'
-})
+    location.href = '/portfolio';
+});
