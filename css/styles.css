@@ -11,6 +11,7 @@ html[data-theme="light"] {
   --background-color-light: #F8F8F8; /* Seasalt */
   --background-color-dark: #EFEFEF; /* Anti-Flash White */
   --background-image: url(../assets/page-background-light.png);
+  --shadow-color: #0A0A0A1A; /* Night 10% */
   --text-color-dark: #0A0A0A; /* Night */
   --text-color-medium: #1B1B1B; /* Eerie black */
   --text-color-light: #2C2C2C; /* Jet */
@@ -21,6 +22,7 @@ html[data-theme="dark"] {
   --background-color-light: #0A0A0A; /* Night */
   --background-color-dark: #1B1B1B; /* Eerie black */
   --background-image: url(../assets/page-background-dark.png);
+  --shadow-color: #F8F8F81A; /* Seasalt 10% */
   --text-color-dark: #F8F8F8; /* Seasalt */
   --text-color-medium: #EFEFEF; /* Anti-Flash White */
   --text-color-light: #D8D8D8; /* Timberwolf */
@@ -223,12 +225,6 @@ textarea {
   font-size: 1.6rem
 }
 
-/*REVIEW*/
-.btn-theme {
-  background: var(--accent-color);
-  color: var(--background-color-light);
-}
-
 .section-pad {
   padding: 12rem 0
 }
@@ -356,6 +352,10 @@ textarea {
   grid-gap: 10rem
 }
 
+.about-content-title {
+  color: var(--text-color-medium)
+}
+
 @media only screen and (max-width: 56.25em) {
   .about-content {
     grid-template-columns: 1fr;
@@ -408,7 +408,7 @@ textarea {
 }
 
 .project {
-  background: rgba(153, 153, 153, 0.2); /*TODO*/
+  background: var(--accent-color-transparent);
   border-radius: 2px;
 }
 
@@ -421,6 +421,7 @@ textarea {
 .project-title {
   font-size: 2rem;
   padding: 2rem 0.5rem;
+  text-align: center;
 }
 
 .contact-section {
@@ -460,7 +461,7 @@ textarea {
   width: 100%;
   z-index: 1000;
   background: var(--background-color-light);
-  box-shadow: 0 10px 100px rgba(0,0,0,0.1); /*REVIEW*/
+  box-shadow: 0 10px 100px var(--shadow-color);
 }
 
 .header-content {
@@ -522,8 +523,14 @@ textarea {
   letter-spacing: 1px
 }
 
+.header-navbar {
+  display: flex;
+  align-items: center;
+}
+
 .header-navbar-links {
-  display: flex
+  display: flex;
+  align-items: center;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -552,6 +559,21 @@ textarea {
     padding: 3rem 1.8rem;
     font-size: 1.5rem
   }
+}
+
+
+.theme-button {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  transition: transform .3s
+}
+
+theme-button:hover {
+  transform: translateY(-3px)
 }
 
 .main-footer {
@@ -640,7 +662,7 @@ textarea {
   }
 }
 
-.skills {
+.skills-container {
   display: flex;
   flex-wrap: wrap
 }
@@ -653,7 +675,7 @@ textarea {
   background: var(--text-color-light);
   border-radius: 5px;
   font-weight: 600;
-  color: var(--text-color-medium);
+  color: var(--background-color-dark);
 }
 
 .mouse {
@@ -687,15 +709,6 @@ textarea {
 
 .div-hide {
   display: none !important;
-}
-
-.theme-button {
-  background-color: transparent;
-  background-repeat: no-repeat;
-  border: none;
-  cursor: pointer;
-  overflow: hidden;
-  outline: none;
 }
 
 @keyframes wheel {
