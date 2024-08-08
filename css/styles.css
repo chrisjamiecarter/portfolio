@@ -63,7 +63,6 @@ body {
   box-sizing: border-box;
   position: relative;
   line-height: 1.5;
-  font-family: sans-serif;
   overflow-x: hidden;
   overflow-y: scroll;
   font-family: 'Roboto', sans-serif
@@ -87,10 +86,6 @@ button {
   cursor: pointer
 }
 
-textarea {
-  resize: none
-}
-
 .heading-primary {
   font-size: 6rem;
   text-transform: uppercase;
@@ -101,8 +96,8 @@ textarea {
 }
 
 .heading-secondary {
+  margin: 3rem auto 0 auto;
   font-size: 4rem;
-  text-transform: uppercase;
   letter-spacing: 2px;
   text-align: center;
   color: var(--text-color-medium);
@@ -162,7 +157,7 @@ textarea {
   position: absolute;
   top: calc(100% + 1.5rem);
   height: 5px;
-  width: 3rem;
+  width: 6rem;
   background: var(--accent-color);
   left: 50%;
   transform: translateX(-50%);
@@ -213,7 +208,9 @@ textarea {
   color: var(--background-color-light);
   text-transform: uppercase;
   letter-spacing: 1px;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   font-weight: 700;
   border-radius: 5px;
   box-shadow: 0 5px 15px 0 var(--shadow-color);
@@ -349,7 +346,7 @@ textarea {
 }
 
 .welcome-section-info {
-  margin: 3rem auto 0 auto;
+  margin: 0 auto 0 auto;
   max-width: 80rem
 }
 
@@ -462,8 +459,6 @@ textarea {
 }
 
 .icon-small {
-  display: inline-block;
-  vertical-align: middle; /* Ensures that images are aligned with the text */
   height: 16px;
   width: 16px;
 }
@@ -757,13 +752,6 @@ textarea {
 
 .img-hide {
   display: none !important;
-}
-
-.image-with-text {
-  display: inline-flex;
-  align-items: center; /* Vertically center the image and text within the <a> element */
-  /*text-align: center;*/
-  gap: 1rem; /* Optional: adds space between the image and text */
 }
 
 @keyframes wheel {
