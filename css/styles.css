@@ -756,6 +756,7 @@ textarea {
 .image-with-text {
   display: flex;
   align-items: center;
+  text-align: center;
 }
 
 @keyframes wheel {
