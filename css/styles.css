@@ -356,10 +356,11 @@ textarea {
 .welcome-section-call-to-action {
   margin-top: 5rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  text-align: center;
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+  height: 100%; /* Make sure the container has some height to center the content properly */
+  text-align: center; /* Center text content */
+}
 }
 
 .about-section {
@@ -462,6 +463,8 @@ textarea {
 }
 
 .icon-small {
+  display: inline-block;
+  vertical-align: middle; /* Ensures that images are aligned with the text */
   height: 16px;
   width: 16px;
 }
@@ -759,8 +762,9 @@ textarea {
 
 .image-with-text {
   display: inline-flex;
-  align-items: center;
-  text-align: center;
+  align-items: center; /* Vertically center the image and text within the <a> element */
+  /*text-align: center;*/
+  gap: 1rem; /* Optional: adds space between the image and text */
 }
 
 @keyframes wheel {
