@@ -408,7 +408,8 @@ textarea {
 }
 
 .project {
-  background: var(--accent-color-transparent);
+  background: var(--accent-color);
+  color: var(--background-color-light);
   border-radius: 2px;
 }
 
@@ -435,25 +436,27 @@ textarea {
   width: 16px;
 }
 
-.contact-links-container {
+.contact-links {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
 .contact-link {
-  display: inline-block;
-  font-size: 2rem;
-  padding: 1rem 2rem;
-  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  font-size: 2rem; /*TODO*/
+  padding: 2rem; /*TODO*/
   transition: transform 0.3s ease-out;
 }
 
   .contact-link:hover {
     transform: scale(1.5);
+  }
+
+  .contact-link img {
+    margin: 1rem;
   }
 
 .header {
@@ -561,11 +564,11 @@ textarea {
   }
 }
 
-
 .theme-button {
   background-color: transparent;
   background-repeat: no-repeat;
   border: none;
+  color: var(--text-color-dark);
   cursor: pointer;
   overflow: hidden;
   outline: none;
