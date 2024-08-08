@@ -355,7 +355,11 @@ textarea {
 
 .welcome-section-call-to-action {
   margin-top: 5rem;
-  text-align: center
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
 }
 
 .about-section {
@@ -754,7 +758,7 @@ textarea {
 }
 
 .image-with-text {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   text-align: center;
 }
