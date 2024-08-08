@@ -275,6 +275,11 @@ textarea {
   }
 }
 
+.welcome-section-buttons {
+  display: flex;
+  align-items: center;
+}
+
 .welcome-section-socials {
   position: absolute;
   top: 50%;
@@ -744,6 +749,11 @@ textarea {
 
 .img-hide {
   display: none !important;
+}
+
+.image-with-text {
+  display: flex;
+  align-items: center;
 }
 
 @keyframes wheel {
