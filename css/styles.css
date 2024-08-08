@@ -463,6 +463,10 @@ button {
   width: 16px;
 }
 
+.icon-with-text {
+  margin: 1rem;
+}
+
 .contact-links {
   display: flex;
   justify-content: center;
