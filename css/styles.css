@@ -227,6 +227,20 @@ button {
   font-size: 2rem
 }
 
+@media only screen and (max-width: 56.25em) {
+  .btn-big {
+    min-width: 225px;
+    font-size: 1.5rem
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .btn-big {
+    min-width: 200px;
+    font-size: 1rem
+  }
+}
+
 .section-pad {
   padding: 12rem 0
 }
@@ -486,6 +500,20 @@ button {
   .contact-link img {
     margin: 1rem;
   }
+
+@media only screen and (max-width: 56.25em) {
+  .contact-link {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .contact-link {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+}
 
 .header {
   position: fixed;
