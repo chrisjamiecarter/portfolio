@@ -230,6 +230,7 @@ button {
 @media only screen and (max-width: 56.25em) {
   .btn-big {
     min-width: 225px;
+    padding: 1.25rem 6rem;
     font-size: 1.5rem
   }
 }
@@ -237,6 +238,7 @@ button {
 @media only screen and (max-width: 37.5em) {
   .btn-big {
     min-width: 200px;
+    padding: 1rem 4rem;
     font-size: 1rem
   }
 }
@@ -470,6 +472,20 @@ button {
 .icon-small {
   height: 16px;
   width: 16px;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .icon-small {
+    height: 14px;
+    width: 14px;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .icon-small {
+    height: 12px;
+    width: 12px;
+  }
 }
 
 .icon-with-text {
