@@ -17,5 +17,5 @@ toggleTheme.onclick = function () {
 const headerLogoConatiner = document.querySelector('.header-logo-container');
 
 headerLogoConatiner.addEventListener('click', () => {
-    location.href = '/portfolio';
+    location.href = '#top';
 });
