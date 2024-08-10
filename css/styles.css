@@ -464,7 +464,7 @@ button {
 }
 
 .project:hover .project-description {
-  display: inline;
+  display: flex;
 }
 
 .project:hover .project-image {
