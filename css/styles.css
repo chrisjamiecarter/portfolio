@@ -446,12 +446,12 @@ button {
 
 .project-image {
   height: calc(100% - 6.8rem);
-  min-height: 330px;
   width: 100%;
   object-fit: cover;
   flex: 1;
+  min-height: 250px;
+  max-width: 250px;
 }
-
 
 @media only screen and (max-width: 56.25em) {
   .project {
