@@ -442,6 +442,7 @@ button {
   border-radius: 2px;
   display: flex;
   flex-direction: column;
+  max-width: 250px;
 }
 
 .project-image {
@@ -450,7 +451,6 @@ button {
   object-fit: cover;
   flex: 1;
   min-height: 250px;
-  max-width: 250px;
 }
 
 @media only screen and (max-width: 56.25em) {
