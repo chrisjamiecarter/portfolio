@@ -442,8 +442,7 @@ button {
   border-radius: 2px;
   display: flex;
   flex-direction: column;
-  max-width: 250px;
-}
+  }
 
 .project-image {
   height: calc(100% - 6.8rem);
