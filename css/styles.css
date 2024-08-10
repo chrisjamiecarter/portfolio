@@ -15,7 +15,6 @@ html[data-theme="light"] {
   --text-color-dark: #0A0A0A; /* Night */
   --text-color-medium: #1B1B1B; /* Eerie black */
   --text-color-light: #2C2C2C; /* Jet */
-  --background-linear-gradient: linear-gradient(to right, #F8F8F8CC, #EFEFEFCC); /* Seasalt 80% into Anti-Flash White 80% */
 }
 
 html[data-theme="dark"] {
@@ -26,7 +25,6 @@ html[data-theme="dark"] {
   --text-color-dark: #F8F8F8; /* Seasalt */
   --text-color-medium: #EFEFEF; /* Anti-Flash White */
   --text-color-light: #D8D8D8; /* Timberwolf */
-  --background-linear-gradient: linear-gradient(to right, #0A0A0ACC, #1B1B1BCC); /* Night 80% into Eerie black 80% */
 }
 
 *, *::after, *::before {
@@ -269,7 +267,9 @@ button {
 
 .welcome-section {
   color: var(--background-color-light);
-  background: var(--background-linear-gradient),var(--background-image);
+  background-image: var(--background-image);
+  background-color: var(--background-color-dark);
+  background-size: cover;
   background-position: center;
   height: 100vh;
   min-height: 80rem;
@@ -464,7 +464,8 @@ button {
   }
 
 .contact-section {
-  background: var(--background-linear-gradient),var(--background-image);
+  background-image: var(--background-image);
+  background-color: var(--background-color-dark);
   background-size: cover;
   background-position: center;
 }
