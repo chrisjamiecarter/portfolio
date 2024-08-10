@@ -212,21 +212,18 @@ button {
   font-weight: 700;
   border-radius: 5px;
   box-shadow: 0 5px 15px 0 var(--shadow-color);
-  transition: transform .3s
+  transition: transform .3s ease-out;
+  min-width: 300px;
+  padding: 1.5rem 8rem;
+  font-size: 2rem;
 }
 
   .btn:hover {
     transform: translateY(-3px)
   }
 
-.btn-big {
-  min-width: 300px;
-  padding: 1.5rem 8rem;
-  font-size: 2rem
-}
-
 @media only screen and (max-width: 56.25em) {
-  .btn-big {
+  .btn {
     min-width: 200px;
     padding: 1.25rem 6rem;
     font-size: 1.5rem
@@ -234,7 +231,7 @@ button {
 }
 
 @media only screen and (max-width: 37.5em) {
-  .btn-big {
+  .btn {
     min-width: 150px;
     padding: 1rem 4rem;
     font-size: 1rem
@@ -380,7 +377,7 @@ button {
   grid-gap: 10rem
 }
 
-.about-content-title {
+.content-title {
   color: var(--text-color-medium)
 }
 
@@ -391,14 +388,14 @@ button {
   }
 }
 
-.about-content-title {
+.content-title {
   font-weight: 700;
   font-size: 2.8rem;
   margin-bottom: 3rem
 }
 
 @media only screen and (max-width: 37.5em) {
-  .about-content-title {
+  .content-title {
     font-size: 2.4rem
   }
 }
@@ -446,6 +443,22 @@ button {
   width: 100%;
   object-fit: cover;
 }
+
+.project-description {
+  display: none;
+  height: calc(100% - 6.8rem);
+  width: 100%;
+  object-fit: cover;
+}
+
+.project:hover .project-description {
+  display: inline;
+}
+
+.project:hover .project-image {
+  display: none;
+}
+
 
 .project-title {
   font-size: 1.5rem;

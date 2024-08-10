@@ -38,10 +38,10 @@
         </ul>
         <button id="theme-toggle" class="theme-button" type="button">
           <div class="theme-icon-light img-hide">
-            <img height="24" width="24" src="./assets/icon-moon-dark.svg" alt="Switch to Dark Mode" />
+            <img height="24" width="24" src="./assets/icon-moon-dark.svg" alt="Toggle Theme" />
           </div>
           <div class="theme-icon-dark img-hide">
-            <img height="24" width="24" src="./assets/icon-sun-light.svg" alt="Switch to Light Mode" />
+            <img height="24" width="24" src="./assets/icon-sun-light.svg" alt="Toggle Theme" />
           </div>
         </button>
       </div>
@@ -58,12 +58,12 @@
       </div>
       <div class="welcome-section-buttons">
         <div class="welcome-section-call-to-action">
-          <a href="#projects" class="btn btn-big">Projects</a>
+          <a href="#projects" class="btn">Projects</a>
         </div>
         <div class="welcome-section-call-to-action">
-          <a class="btn btn-big" href="./assets/CV.pdf" download>
-            <img src="./assets/icon-download-light.svg" alt="Download Chris Carter CV" class="icon-small icon-with-text theme-icon-light img-hide">
-            <img src="./assets/icon-download-dark.svg" alt="Download Chris Carter CV" class="icon-small icon-with-text theme-icon-dark img-hide">
+          <a class="btn" href="./assets/CV.pdf" download>
+            <img class="icon-small icon-with-text theme-icon-light img-hide" src="./assets/icon-download-light.svg">
+            <img  class="icon-small icon-with-text theme-icon-dark img-hide"src="./assets/icon-download-dark.svg">
             CV
           </a>
         </div>
@@ -72,20 +72,20 @@
     <div class="welcome-section-socials">
       <div class="welcome-section-social">
         <a id="welcome-section-social-link-linkedin" class="welcome-section-social-link" href="https://www.linkedin.com/in/chris-carter-1495801aa" rel="noreferrer" target="_blank">
-          <img src="./assets/icon-brand-linkedin-dark.svg" alt="Chris Carter Linkedin Profile" class="welcome-section-social-icon theme-icon-light img-hide">
-          <img src="./assets/icon-brand-linkedin-light.svg" alt="Chris Carter Linkedin Profile" class="welcome-section-social-icon theme-icon-dark img-hide">
+          <img class="welcome-section-social-icon theme-icon-light img-hide" src="./assets/icon-brand-linkedin-dark.svg" alt="Linkedin">
+          <img class="welcome-section-social-icon theme-icon-dark img-hide" src="./assets/icon-brand-linkedin-light.svg" alt="Linkedin">
         </a>
       </div>
       <div class="welcome-section-social">
         <a id="welcome-section-social-link-github" class="welcome-section-social-link" href="https://github.com/cjc-sweatbox" rel="noreferrer" target="_blank">
-          <img src="./assets/icon-brand-github-dark.svg" alt="Chris Carter GitHub Profile" class="welcome-section-social-icon theme-icon-light img-hide">
-          <img src="./assets/icon-brand-github-light.svg" alt="Chris Carter GitHub Profile" class="welcome-section-social-icon theme-icon-dark img-hide">
+          <img class="welcome-section-social-icon theme-icon-light img-hide" src="./assets/icon-brand-github-dark.svg" alt="GitHub">
+          <img class="welcome-section-social-icon theme-icon-dark img-hide" src="./assets/icon-brand-github-light.svg" alt="GitHub">
         </a>
       </div>
       <div class="welcome-section-social">
         <a id="welcome-section-social-link-twitter" class="welcome-section-social-link" href="https://x.com/cjc_sweatbox" rel="noreferrer" target="_blank">
-          <img src="./assets/icon-brand-x-twitter-dark.svg" alt="Chris Carter X Twitter Profile" class="welcome-section-social-icon theme-icon-light img-hide">
-          <img src="./assets/icon-brand-x-twitter-light.svg" alt="Chris Carter X Twitter Profile" class="welcome-section-social-icon theme-icon-dark img-hide">
+          <img class="welcome-section-social-icon theme-icon-light img-hide" src="./assets/icon-brand-x-twitter-dark.svg" alt="Twitter">
+          <img class="welcome-section-social-icon theme-icon-dark img-hide" src="./assets/icon-brand-x-twitter-light.svg" alt="Twitter">
         </a>
       </div>
     </div>
@@ -103,7 +103,7 @@
       </h2>
       <div class="about-content">
         <div class="about-content-main">
-          <h3 class="about-content-title">Who am I?</h3>
+          <h3 class="content-title">Who am I?</h3>
           <div class="about-content-details">
             <p class="about-content-details-paragraph">
               I'm a <strong>Senior Software Developer</strong> designing, building and managing applications.
@@ -123,7 +123,7 @@
           </div>
         </div>
         <div class="about-content-skills">
-          <h3 class="about-content-title">What can I do?</h3>
+          <h3 class="content-title">What can I do?</h3>
           <div class="skills-container">
             <div class="skill">.NET</div>
             <div class="skill">Python</div>
@@ -148,49 +148,89 @@
         </span>
       </h2>
       <div class="projects-content">
+        <h3 class="content-title">Console - Beginner</h3>
         <div class="projects-container">
-          <a href="https://github.com/cjc-sweatbox/math-game" target="_blank" class="project project-tile">
-            <img class="project-image" src="./assets/project-logo-math-game.png" alt="math game project">
+          <a href="https://github.com/cjc-sweatbox/math-game" target="_blank" class="project">
+            <img class="project-image" src="./assets/project-logo-math-game.png" alt="Math Game">
+            <p class="project-description">
+              A .NET project designed to demonstrate a simple console application.
+            </p>
             <p class="project-title">Math Game</p>
           </a>
-          <a href="https://github.com/cjc-sweatbox/calculator" target="_blank" class="project project-tile">
-            <img class="project-image" src="./assets/project-logo-calculator.png" alt="calculator project">
+          <a href="https://github.com/cjc-sweatbox/calculator" target="_blank" class="project">
+            <img class="project-image" src="./assets/project-logo-calculator.png" alt="Calculator">
+            <p class="project-description">
+              A .NET project designed to demonstrate documentation.
+            </p>
             <p class="project-title">Calculator</p>
           </a>
-          <a href="https://github.com/cjc-sweatbox/habit-tracker" target="_blank" class="project project-tile">
-            <img class="project-image" src="./assets/project-logo-habit-tracker.png" alt="habit tracker project">
+          <a href="https://github.com/cjc-sweatbox/habit-tracker" target="_blank" class="project">
+            <img class="project-image" src="./assets/project-logo-habit-tracker.png" alt="Habit Tracker">
+            <p class="project-description">
+              A .NET project designed to demonstrate performing CRUD operations against a database using ADO.NET.
+            </p>
             <p class="project-title">Habit Tracker</p>
           </a>
-          <a href="https://github.com/cjc-sweatbox/coding-tracker" target="_blank" class="project project-tile">
-            <img class="project-image" src="./assets/project-logo-coding-tracker.png" alt="coding tracker project">
+          <a href="https://github.com/cjc-sweatbox/coding-tracker" target="_blank" class="project">
+            <img class="project-image" src="./assets/project-logo-coding-tracker.png" alt="Coding Tracker">
+            <p class="project-description">
+              A .NET project designed to demonstrate working with Dapper, external libraries and separation of concerns.
+            </p>
             <p class="project-title">Coding Tracker</p>
           </a>
-          <a href="https://github.com/cjc-sweatbox/flashcards" target="_blank" class="project project-tile">
-            <img class="project-image" src="./assets/project-logo-flashcards.png" alt="flashcards project">
+        </div>
+        <h3 class="content-title">Console - Intermediate</h3>
+        <div class="projects-container">
+          <a href="https://github.com/cjc-sweatbox/flashcards" target="_blank" class="project">
+            <img class="project-image" src="./assets/project-logo-flashcards.png" alt="Flashcards">
+            <p class="project-description">
+              A .NET project designed to demonstrate working with SQL Server and Data Transfer Objects (DTOs) for versatile object handling.
+            </p>
             <p class="project-title">Flashcards</p>
           </a>
-          <a href="https://github.com/cjc-sweatbox/drinks-info" target="_blank" class="project project-tile">
-            <img class="project-image" src="./assets/project-logo-drinks-info.png" alt="drinks info project">
+          <a href="https://github.com/cjc-sweatbox/drinks-info" target="_blank" class="project">
+            <img class="project-image" src="./assets/project-logo-drinks-info.png" alt="Drinks Info">
+            <p class="project-description">
+              A .NET project designed to demonstrate using HTTP requests on an external API to retrieve and display data.
+            </p>
             <p class="project-title">Drinks Info</p>
           </a>
-          <a href="https://github.com/cjc-sweatbox/phonebook" target="_blank" class="project project-tile">
-            <img class="project-image" src="./assets/project-logo-phonebook.png" alt="phonebook project">
+          <a href="https://github.com/cjc-sweatbox/phonebook" target="_blank" class="project">
+            <img class="project-image" src="./assets/project-logo-phonebook.png" alt="Phonebook">
+            <p class="project-description">
+              A .NET project designed to demonstrate using the Entity Framework ORM and SQL Server.
+            </p>
             <p class="project-title">Phonebook</p>
           </a>
-          <a href="https://github.com/cjc-sweatbox/shifts-logger" target="_blank" class="project project-tile">
-            <img class="project-image" src="./assets/project-logo-shifts-logger.png" alt="shifts logger project">
+          <a href="https://github.com/cjc-sweatbox/shifts-logger" target="_blank" class="project">
+            <img class="project-image" src="./assets/project-logo-shifts-logger.png" alt="Shifts Logger">
+            <p class="project-description">
+              A .NET project to demonstrate creating and consuming Web APIs alongside Entity Framework.
+            </p>
             <p class="project-title">Shifts Logger</p>
           </a>
-          <a href="https://github.com/cjc-sweatbox/exercise-tracker" target="_blank" class="project project-tile">
-            <img class="project-image" src="./assets/project-logo-exercise-tracker.png" alt="exercise tracker project">
+        </div>
+        <h3 class="content-title">Console - Advanced</h3>
+        <div class="projects-container">
+          <a href="https://github.com/cjc-sweatbox/exercise-tracker" target="_blank" class="project">
+            <img class="project-image" src="./assets/project-logo-exercise-tracker.png" alt="Exercise Tracker">
+            <p class="project-description">
+              A .NET project designed to demonstrate the repository pattern solution for data persistence.
+            </p>
             <p class="project-title">Exercise Tracker</p>
           </a>
-          <a href="https://github.com/cjc-sweatbox/sports-results" target="_blank" class="project project-tile">
-            <img class="project-image" src="./assets/project-logo-sports-results.png" alt="sports results project">
+          <a href="https://github.com/cjc-sweatbox/sports-results" target="_blank" class="project">
+            <img class="project-image" src="./assets/project-logo-sports-results.png" alt="Sports Results">
+            <p class="project-description">
+              A .NET project designed to demonstrate harvesting data from non-api sources and sending emails.
+            </p>
             <p class="project-title">Sports Results</p>
           </a>
-          <a href="https://github.com/cjc-sweatbox/excel-reader" target="_blank" class="project project-tile">
-            <img class="project-image" src="./assets/project-logo-excel-reader.png" alt="excel reader project">
+          <a href="https://github.com/cjc-sweatbox/excel-reader" target="_blank" class="project">
+            <img class="project-image" src="./assets/project-logo-excel-reader.png" alt="Excel Reader">
+            <p class="project-description">
+              A .NET project designed to demonstrate reading, writing and manipulating data.
+            </p>
             <p class="project-title">Excel Reader</p>
           </a>
         </div>
@@ -208,23 +248,23 @@
       <div class="contact-links-container">
         <div class="contact-links">
           <a id="contact-link-linkedin" href="https://www.linkedin.com/in/chris-carter-1495801aa" target="_blank" class="contact-link">
-            <img src="./assets/icon-brand-linkedin-dark.svg" alt="Chris Carter Linkedin Profile" class="icon-small theme-icon-light img-hide">
-            <img src="./assets/icon-brand-linkedin-light.svg" alt="Chris Carter Linkedin Profile" class="icon-small theme-icon-dark img-hide">
+            <img class="icon-small theme-icon-light img-hide" src="./assets/icon-brand-linkedin-dark.svg">
+            <img  class="icon-small theme-icon-dark img-hide"src="./assets/icon-brand-linkedin-light.svg">
             LinkedIn
           </a>
           <a id="contact-link-github" href="https://github.com/cjc-sweatbox" target="_blank" class="contact-link">
-            <img src="./assets/icon-brand-github-dark.svg" alt="Chris Carter GitHub Profile" class="icon-small theme-icon-light img-hide">
-            <img src="./assets/icon-brand-github-light.svg" alt="Chris Carter GitHub Profile" class="icon-small theme-icon-dark img-hide">
+            <img class="icon-small theme-icon-light img-hide" src="./assets/icon-brand-github-dark.svg">
+            <img class="icon-small theme-icon-dark img-hide" src="./assets/icon-brand-github-light.svg">
             GitHub
           </a>
           <a id="contact-link-twitter" href="https://x.com/SweatboxGaming" target="_blank" class="contact-link">
-            <img src="./assets/icon-brand-x-twitter-dark.svg" alt="Chris Carter X Twitter Profile" class="icon-small theme-icon-light img-hide">
-            <img src="./assets/icon-brand-x-twitter-light.svg" alt="Chris Carter X Twitter Profile" class="icon-small theme-icon-dark img-hide">
+            <img class="icon-small theme-icon-light img-hide" src="./assets/icon-brand-x-twitter-dark.svg">
+            <img class="icon-small theme-icon-dark img-hide" src="./assets/icon-brand-x-twitter-light.svg">
             Twitter
           </a>
           <a id="contact-link-email" href="mailto:chrisjamiecarter@gmail.com" class="contact-link">
-            <img src="./assets/icon-envelope-dark.svg" alt="Chris Carter Email Address" class="icon-small theme-icon-light img-hide">
-            <img src="./assets/icon-envelope-light.svg" alt="Chris Carter Email Address" class="icon-small theme-icon-dark img-hide">
+            <img class="icon-small theme-icon-light img-hide" src="./assets/icon-envelope-dark.svg">
+            <img class="icon-small theme-icon-dark img-hide" src="./assets/icon-envelope-light.svg" >
             Email
           </a>
         </div>
@@ -240,13 +280,13 @@
           </h2>
           <div class="main-footer-social-container">
             <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/chris-carter-1495801aa">
-              <img class="main-footer-icon" src="./assets/icon-brand-linkedin-light.svg" alt="Chris Carter Linkedin Profile">
+              <img class="main-footer-icon" src="./assets/icon-brand-linkedin-light.svg" alt="Linkedin">
             </a>
             <a target="_blank" rel="noreferrer" href="https://github.com/cjc-sweatbox">
-              <img class="main-footer-icon" src="./assets/icon-brand-github-light.svg" alt="Chris Carter GitHub Profile">
+              <img class="main-footer-icon" src="./assets/icon-brand-github-light.svg" alt="GitHub">
             </a>
             <a target="_blank" rel="noreferrer" href="https://x.com/cjc_sweatbox">
-              <img class="main-footer-icon margin-right-none" src="./assets/icon-brand-x-twitter-light.svg" alt="Chris Carter X Twitter Profile">
+              <img class="main-footer-icon margin-right-none" src="./assets/icon-brand-x-twitter-light.svg" alt="Twitter">
             </a>
           </div>
         </div>
