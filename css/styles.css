@@ -482,17 +482,11 @@ button {
   .project-description {
     font-size: 1rem;
   }
-  .project-title {
-    font-size: 1.25rem;
-  }
 }
 
 @media only screen and (max-width: 37.5em) {
   .project-description {
     font-size: 0.8rem;
-  }
-  .project-title {
-    font-size: 1rem;
   }
 }
 
@@ -519,6 +513,21 @@ button {
   .project-title:hover {
     transform: translateY(-3px)
   }
+
+
+@media only screen and (max-width: 56.25em) {
+  .project-title {
+    font-size: 1.25rem;
+    padding: 1.5rem 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .project-title {
+    font-size: 0.9rem;
+    padding: 1rem 0.5rem;
+  }
+}
 
 .contact-section {
   background-image: var(--background-image);
