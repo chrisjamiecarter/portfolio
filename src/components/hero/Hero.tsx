@@ -15,7 +15,7 @@ const Hero = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Github Link"
-              className="text-white transition-all duration-800 hover:text-black">
+              className="text-white transition-all duration-500 hover:text-sky-500">
               <Github className="fill-current w-15 h-auto" />
             </a>
             <a
@@ -23,19 +23,19 @@ const Hero = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn Link"
-              className="text-white transition-all duration-800 hover:text-black">
+              className="text-white transition-all duration-500 hover:text-sky-500">
               <LinkedIn className="fill-current w-15 h-auto" />
             </a>
           </div>
           <div className="mt-4 flex justify-center gap-4 sm:mt-6">
             <a
-              className="inline-block rounded border border-sky-600 bg-sky-600 px-5 py-3 font-medium text-white shadow-sm transition-colors duration-800 hover:bg-sky-700"
+              className="inline-block rounded border border-sky-500 bg-sky-500 px-5 py-3 font-medium text-white shadow-sm transition-colors duration-500 hover:bg-sky-600"
               href="#about">
               About Me
             </a>
 
             <a
-              className="inline-block rounded border border-gray-200 px-5 py-3 font-medium text-gray-200 shadow-sm transition-colors duration-800 hover:bg-gray-50 hover:text-gray-900"
+              className="inline-block rounded border border-gray-200 px-5 py-3 font-medium text-gray-200 shadow-sm transition-colors duration-500 hover:bg-gray-50 hover:text-sky-500"
               href="#">
               CV
             </a>

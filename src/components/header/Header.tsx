@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import logo from "@/assets/logo.png";
+import Logo from "@/components/logo/Logo";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
@@ -24,9 +24,9 @@ const Header = () => {
         aria-label="Global"
         className="mx-auto flex max-w-7xl items-center justify-between p-6 text-gray-700 lg:px-8">
         <div className="absolute">
-          <a href="/" className="flex gap-2 items-center font-semibold ">
+          <a href="#" className="flex gap-2 items-center font-semibold ">
             <span className="sr-only">Chris Carter</span>
-            <img alt="" src={logo} className="h-8 w-auto" />
+            <Logo className="h-8 w-auto" />
           </a>
         </div>
         <div className="flex flex-1 justify-end lg:hidden">
@@ -39,14 +39,14 @@ const Header = () => {
           </button>
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-center lg:gap-x-12">
-          <a href="#" className="text-sm/6 font-semibold">
+          <a href="#about" className="text-sm/6 font-semibold">
             About Me
           </a>
-          <a href="#" className="text-sm/6 font-semibold">
+          <a href="#projects" className="text-sm/6 font-semibold">
             Projects
           </a>
-          <a href="#" className="text-sm/6 font-semibold">
-            Contact
+          <a href="#proficiencies" className="text-sm/6 font-semibold">
+            Proficiencies
           </a>
         </div>
       </nav>
@@ -71,19 +71,19 @@ const Header = () => {
           <div className="mt-6 flow-root">
             <div className="space-y-2">
               <a
-                href="#"
+                href="#about"
                 className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
                 About Me
               </a>
               <a
-                href="#"
+                href="#projects"
                 className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
                 Projects
               </a>
               <a
-                href="#"
+                href="#proficiencies"
                 className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
-                Contact
+                Proficiencies
               </a>
             </div>
           </div>

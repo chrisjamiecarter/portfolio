@@ -1,4 +1,4 @@
-import logo from "@/assets/logo.png";
+import Logo from "@/components/logo/Logo";
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
         <div className="sm:flex sm:items-center sm:justify-between">
           <div className="flex gap-2 items-center justify-center text-gray-600 sm:justify-start">
-            <img alt="" src={logo} className="h-8" />
+            <Logo className="h-8 w-auto" />
             <span className="font-semibold">Chris Carter</span>
           </div>
 
