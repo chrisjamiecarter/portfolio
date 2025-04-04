@@ -1,2 +1,2 @@
 # portfolio
-My portfolio site.
+My WIP portfolio site.
