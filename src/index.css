@@ -24,4 +24,14 @@
       transform: translateY(-2000px);
     }
   }
+
+  --animate-profilecard: profilecard 3s ease infinite;
+  @keyframes profilecard {
+    from {
+      transform: translate(-.5rem, -.5rem);
+    }
+    to {
+      transform: translateY(-2000px);
+    }
+  }
 }

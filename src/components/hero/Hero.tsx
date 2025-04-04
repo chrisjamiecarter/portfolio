@@ -1,14 +1,17 @@
+import { ReactTyped } from "react-typed";
+import { ArrowDownTrayIcon } from "@heroicons/react/24/outline";
 import Jumbotron from "@/components/jumbotron/Jumbotron";
 import Github from "@/components/icons/GitHub";
 import LinkedIn from "@/components/icons/LinkedIn";
-import { ReactTyped } from "react-typed";
 
 const Hero = () => {
   return (
     <section>
       <Jumbotron>
         <div className="text-white text-center grid h-screen place-content-center">
-          <h1 className="text-4xl font-bold sm:text-5xl">Chris Carter</h1>
+          <h1 className="text-4xl font-bold sm:text-5xl">
+            Hey, I'm Chris Carter
+          </h1>
           <ReactTyped
             strings={[
               "Senior Software Engineer",
@@ -42,15 +45,16 @@ const Hero = () => {
           </div>
           <div className="mt-4 flex justify-center gap-4 sm:mt-6">
             <a
-              className="inline-block rounded border border-sky-500 bg-sky-500 px-5 py-3 font-medium text-white shadow-sm transition-colors duration-500 hover:bg-sky-600"
+              className="inline-block w-50 rounded border border-gray-200 px-5 py-3 font-medium text-gray-200 shadow-sm transition-colors duration-500 hover:bg-gray-50 hover:text-sky-500"
               href="#about">
               About Me
             </a>
 
             <a
-              className="inline-block rounded border border-gray-200 px-5 py-3 font-medium text-gray-200 shadow-sm transition-colors duration-500 hover:bg-gray-50 hover:text-sky-500"
+              className="inline-flex gap-1 items-center justify-center w-50 rounded border border-gray-200 px-5 py-3 font-medium text-gray-200 shadow-sm transition-colors duration-500 hover:bg-gray-50 hover:text-sky-500"
               href="#">
-              CV
+              <ArrowDownTrayIcon className="size-4" />
+              Download CV
             </a>
           </div>
         </div>

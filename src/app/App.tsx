@@ -3,7 +3,7 @@ import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
 import Hero from "@/components/hero/Hero";
 import Projects from "@/components/projects/Projects";
-import Proficiencies from "@/components/proficiencies/Proficiencies";
+import Skills from "@/components/skills/Skills";
 
 function App() {
   return (
@@ -12,8 +12,8 @@ function App() {
       <main>
         <Hero />
         <About />
+        <Skills />
         <Projects />
-        <Proficiencies />
       </main>
       <Footer />
     </>

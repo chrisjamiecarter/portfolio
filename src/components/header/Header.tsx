@@ -18,17 +18,15 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-10 transition-all duration-300 ${
-        isScrolled ? "bg-white/80" : "bg-transparent"
+        isScrolled ? "bg-gray-200/80" : "bg-transparent"
       }`}>
       <nav
         aria-label="Global"
-        className="mx-auto flex max-w-7xl items-center justify-between p-6 text-gray-700 lg:px-8">
-        <div className="absolute">
-          <a href="#" className="flex gap-2 items-center font-semibold ">
-            <span className="sr-only">Chris Carter</span>
-            <Logo className="h-8 w-auto" />
-          </a>
-        </div>
+        className="mx-auto flex max-w-7xl items-center justify-between p-6 text-slate-700 lg:px-8">
+        <a href="#" className="flex gap-2 items-center font-semibold ">
+          <span className="sr-only">Chris Carter</span>
+          <Logo className="h-8 w-auto" />
+        </a>
         <div className="flex flex-1 justify-end lg:hidden">
           <button
             type="button"
@@ -40,13 +38,13 @@ const Header = () => {
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-center lg:gap-x-12">
           <a href="#about" className="text-sm/6 font-semibold">
-            About Me
+            About
           </a>
           <a href="#projects" className="text-sm/6 font-semibold">
             Projects
           </a>
-          <a href="#proficiencies" className="text-sm/6 font-semibold">
-            Proficiencies
+          <a href="#skills" className="text-sm/6 font-semibold">
+            Skills
           </a>
         </div>
       </nav>
@@ -55,15 +53,18 @@ const Header = () => {
         onClose={setMobileMenuOpen}
         className="lg:hidden">
         <div className="fixed inset-0 z-10" />
-        <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-slate-700/10">
           <div className="flex items-center justify-between sm:justify-end">
-            <a href="/" className="font-semibold text-gray-900 sm:hidden">
-              Chris Carter
+            <a
+              href="#"
+              className="flex gap-2 items-center font-semibold sm:hidden">
+              <Logo className="h-8 w-auto" />
+              <span className="font-semibold text-gray-900">Chris Carter</span>
             </a>
             <button
               type="button"
               onClick={() => setMobileMenuOpen(false)}
-              className="-m-2.5 rounded-md p-2.5 text-gray-700">
+              className="-m-2.5 rounded-md p-2.5 text-slate-700">
               <span className="sr-only">Close menu</span>
               <XMarkIcon aria-hidden="true" className="size-6" />
             </button>
@@ -72,18 +73,18 @@ const Header = () => {
             <div className="space-y-2">
               <a
                 href="#about"
-                className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
-                About Me
+                className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-slate-700 hover:bg-gray-50">
+                About
               </a>
               <a
                 href="#projects"
-                className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
+                className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-slate-700 hover:bg-gray-50">
                 Projects
               </a>
               <a
-                href="#proficiencies"
-                className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
-                Proficiencies
+                href="#skills"
+                className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-slate-700 hover:bg-gray-50">
+                Skills
               </a>
             </div>
           </div>
