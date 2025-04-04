@@ -1,6 +1,7 @@
 import Jumbotron from "@/components/jumbotron/Jumbotron";
 import Github from "@/components/icons/GitHub";
 import LinkedIn from "@/components/icons/LinkedIn";
+import { ReactTyped } from "react-typed";
 
 const Hero = () => {
   return (
@@ -8,7 +9,19 @@ const Hero = () => {
       <Jumbotron>
         <div className="text-white text-center grid h-screen place-content-center">
           <h1 className="text-4xl font-bold sm:text-5xl">Chris Carter</h1>
-          <p>Software Engineer</p>
+          <ReactTyped
+            strings={[
+              "Senior Software Engineer",
+              "Back End Professional",
+              "Front End Dabbler",
+              "Full Stack Explorer",
+            ]}
+            typeSpeed={60}
+            backDelay={1100}
+            backSpeed={30}
+            loop
+          />
+          {/* <p>Software Engineer</p> */}
           <div className="flex gap-5 justify-center items-center p-10">
             <a
               href="https://github.com/chrisjamiecarter"
