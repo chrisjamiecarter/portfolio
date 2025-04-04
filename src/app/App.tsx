@@ -1,12 +1,20 @@
+import About from "@/components/about/About";
+import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
-import Jumbotron from "@/components/jumbotron/Jumbotron";
+import Hero from "@/components/hero/Hero";
+import Projects from "@/components/projects/Projects";
 
 function App() {
   return (
-    <main>
+    <>
       <Header />
-      <Jumbotron />
-    </main>
+      <main>
+        <Hero />
+        <About />
+        <Projects />
+      </main>
+      <Footer />
+    </>
   );
 }
 
