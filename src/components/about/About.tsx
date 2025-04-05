@@ -22,9 +22,8 @@ const About = () => {
           </p>
           <p className="mt-4 text-base text-pretty text-slate-700 sm:text-lg/relaxed">
             Feel free to connect with me on <strong>LinkedIn</strong> or{" "}
-            <strong>GitHub</strong>. I love to consume and share any Software
-            Development content that will help out fellow members in the
-            community.
+            <strong>GitHub</strong>. I enjoy both learning from and contributing
+            to the Software Development community.
           </p>
           <p className="mt-4 text-base text-pretty text-slate-700 sm:text-lg/relaxed">
             I'm currently on the lookout for exciting job opportunities where I

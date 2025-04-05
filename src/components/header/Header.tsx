@@ -9,7 +9,7 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 250);
+      setIsScrolled(window.scrollY > 100);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -18,7 +18,7 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-10 transition-all duration-300 ${
-        isScrolled ? "bg-gray-200/80" : "bg-transparent"
+        isScrolled ? "bg-white shadow-lg" : "bg-transparent"
       }`}>
       <nav
         aria-label="Global"
@@ -40,11 +40,11 @@ const Header = () => {
           <a href="#about" className="text-sm/6 font-semibold">
             About
           </a>
-          <a href="#projects" className="text-sm/6 font-semibold">
-            Projects
-          </a>
           <a href="#skills" className="text-sm/6 font-semibold">
             Skills
+          </a>
+          <a href="#projects" className="text-sm/6 font-semibold">
+            Projects
           </a>
         </div>
       </nav>
@@ -73,18 +73,21 @@ const Header = () => {
             <div className="space-y-2">
               <a
                 href="#about"
-                className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-slate-700 hover:bg-gray-50">
+                className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-slate-700 hover:bg-gray-50"
+                onClick={() => setMobileMenuOpen(false)}>
                 About
               </a>
               <a
-                href="#projects"
-                className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-slate-700 hover:bg-gray-50">
-                Projects
+                href="#skills"
+                className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-slate-700 hover:bg-gray-50"
+                onClick={() => setMobileMenuOpen(false)}>
+                Skills
               </a>
               <a
-                href="#skills"
-                className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-slate-700 hover:bg-gray-50">
-                Skills
+                href="#projects"
+                className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-slate-700 hover:bg-gray-50"
+                onClick={() => setMobileMenuOpen(false)}>
+                Projects
               </a>
             </div>
           </div>
