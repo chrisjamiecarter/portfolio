@@ -10,7 +10,7 @@ const Hero = () => {
       <Jumbotron>
         <div className="text-white text-center grid h-screen place-content-center">
           <h1 className="text-4xl font-bold sm:text-5xl">
-            Hey, I'm Chris Carter
+            Hey, <span className="inline-block">I'm Chris Carter</span>
           </h1>
           <ReactTyped
             strings={[
@@ -43,7 +43,7 @@ const Hero = () => {
               <LinkedIn className="fill-current w-15 h-auto" />
             </a>
           </div>
-          <div className="mt-4 flex justify-center gap-4 sm:mt-6">
+          <div className="mt-4 flex flex-col md:flex-row items-center justify-center gap-4 sm:mt-6">
             <a
               className="inline-block w-50 rounded border border-gray-200 px-5 py-3 font-medium text-gray-200 shadow-sm transition-colors duration-500 hover:bg-gray-50 hover:text-sky-500"
               href="#about">
@@ -53,7 +53,7 @@ const Hero = () => {
             <a
               className="inline-flex gap-1 items-center justify-center w-50 rounded border border-gray-200 px-5 py-3 font-medium text-gray-200 shadow-sm transition-colors duration-500 hover:bg-gray-50 hover:text-sky-500"
               href="#">
-              <ArrowDownTrayIcon className="size-4" />
+              <ArrowDownTrayIcon className="size-6" />
               Download CV
             </a>
           </div>
