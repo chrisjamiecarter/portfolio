@@ -15,6 +15,17 @@ const projects = [
     href: "https://github.com/chrisjamiecarter/quiz-game",
     imageSrc: QuizGameImage,
     imageAlt: "Quiz Game",
+    badges: [
+      "C#",
+      "TypeScript",
+      "HTML",
+      "CSS",
+      "TSQL",
+      "Angular",
+      "Angular Material",
+      "Entity Framework Core",
+      "SQL Server",
+    ],
   },
   {
     name: "Memory Game",
@@ -23,6 +34,15 @@ const projects = [
     href: "https://github.com/chrisjamiecarter/memory-game",
     imageSrc: MemoryGameImage,
     imageAlt: "Memory Game",
+    badges: [
+      "HTML",
+      "C#",
+      "CSS",
+      "Blazor",
+      "Bootstrap",
+      "Entity Framework Core",
+      "SQL Server",
+    ],
   },
 
   {
@@ -32,6 +52,17 @@ const projects = [
     href: "https://github.com/chrisjamiecarter/friends-manager",
     imageSrc: FriendsManagerImage,
     imageAlt: "Friends Manager",
+    badges: [
+      "JavaScript",
+      "C#",
+      "HTML",
+      "CSS",
+      "React",
+      "Redux",
+      "Tailwind",
+      "Entity Framework Core",
+      "SQL Server",
+    ],
   },
   {
     name: "Sleep Tracker",
@@ -40,6 +71,16 @@ const projects = [
     href: "https://github.com/chrisjamiecarter/sleep-tracker",
     imageSrc: SleepTrackerImage,
     imageAlt: "Sleep Tracker",
+    badges: [
+      "C#",
+      "TypeScript",
+      "HTML",
+      "SCSS",
+      "Angular",
+      "Angular Material",
+      "Entity Framework Core",
+      "SQL Server",
+    ],
   },
   {
     name: "Product Management System",
@@ -48,6 +89,16 @@ const projects = [
     href: "https://github.com/chrisjamiecarter/product-management-system",
     imageSrc: ProductManagementSystemImage,
     imageAlt: "Product Management System",
+    badges: [
+      "C#",
+      "HTML",
+      "CSS",
+      "Blazor",
+      "Bootstrap",
+      "ASP.NET Core Identity",
+      "Entity Framework Core",
+      "SQL Server",
+    ],
   },
   {
     name: "Budget",
@@ -56,6 +107,17 @@ const projects = [
     href: "https://github.com/chrisjamiecarter/budget",
     imageSrc: BudgetImage,
     imageAlt: "Budget",
+    badges: [
+      "C#",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "ASP.NET MVC",
+      "Bootstrap",
+      "ASP.NET Core Identity",
+      "Entity Framework Core",
+      "SQL Server",
+    ],
   },
 ];
 
@@ -68,17 +130,20 @@ const Projects = () => {
     <section id="projects" className="bg-white">
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <Divider />
-        <div className="mx-auto max-w-prose text-center py-16 sm:py-24 lg:py-32">
-          <h1 className="text-4xl font-bold text-sky-500 sm:text-5xl">
-            What I have done
-          </h1>
+        <div className="py-16 sm:py-24 lg:py-32">
+          <div className="mx-auto max-w-prose text-center">
+            <h1 className="text-4xl font-bold text-sky-500 sm:text-5xl">
+              What I have done
+            </h1>
 
-          <p className="mt-4 text-base text-pretty text-slate-700 sm:text-lg/relaxed">
-            I love to build and contribute. Here are some of my projects.
-          </p>
-        </div>
-        <div className="space-y-12 lg:grid lg:grid-cols-2 lg:gap-x-6 lg:space-y-6">
-          {projectElements}
+            <p className="mt-4 text-base text-pretty text-slate-700 sm:text-lg/relaxed">
+              I love to build personal projects as well as contribute to
+              community projects.
+            </p>
+          </div>
+          <div className="pt-4 sm:mt-6 space-y-12 lg:grid lg:grid-cols-2 lg:gap-x-6 lg:space-y-6">
+            {projectElements}
+          </div>
         </div>
       </div>
     </section>
