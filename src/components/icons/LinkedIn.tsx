@@ -1,8 +1,8 @@
 export type LinkedInProps = {
-  className: string;
+  className?: string;
 };
 
-const LinkedIn = ({ className }: LinkedInProps) => {
+const LinkedIn = ({ className = "" }: LinkedInProps) => {
   return (
     <svg
       className={className}

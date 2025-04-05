@@ -1,8 +1,8 @@
 export type GithubProps = {
-  className: string;
+  className?: string;
 };
 
-const Github = ({ className }: GithubProps) => {
+const Github = ({ className = "" }: GithubProps) => {
   return (
     <svg
       className={className}

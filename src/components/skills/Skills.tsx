@@ -1,4 +1,5 @@
-import Skill from "@/components/skill/Skill";
+import Skill from "@/components/skills/Skill";
+import Divider from "../divider/Divider";
 
 const skills = [
   ".NET",
@@ -21,16 +22,13 @@ const skills = [
 
 const Skills = () => {
   const skillElements = skills.map((skill) => {
-    return <Skill name={skill} />;
+    return <Skill key={skill} name={skill} />;
   });
 
   return (
     <section id="skills" className="bg-white">
-      <div className="mx-auto max-w-screen-xl px-4 sm:px-6  lg:px-8">
-        <span className="mx-auto flex items-center">
-          <span className="h-px flex-1 bg-gradient-to-r from-transparent to-sky-500" />
-          <span className="h-px flex-1 bg-gradient-to-l from-transparent to-sky-500" />
-        </span>
+      <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+        <Divider />
         <div className="mx-auto max-w-prose text-center py-16 sm:py-24 lg:py-32">
           <h1 className="text-4xl font-bold text-sky-500 sm:text-5xl">
             What I can do

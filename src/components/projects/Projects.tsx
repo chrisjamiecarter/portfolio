@@ -1,56 +1,84 @@
+import BudgetImage from "@/assets/budget.png";
+import FriendsManagerImage from "@/assets/friends-manager.png";
+import MemoryGameImage from "@/assets/memory-game.png";
+import ProductManagementSystemImage from "@/assets/product-management-system.png";
+import QuizGameImage from "@/assets/quiz-game.png";
+import SleepTrackerImage from "@/assets/sleep-tracker.png";
+import Project from "./Project";
+import Divider from "../divider/Divider";
+
+const projects = [
+  {
+    name: "Quiz Game",
+    description:
+      "A .NET and Angular project designed to demonstrate a complete fullstack application with complex data relationships.",
+    href: "https://github.com/chrisjamiecarter/quiz-game",
+    imageSrc: QuizGameImage,
+    imageAlt: "Quiz Game",
+  },
+  {
+    name: "Memory Game",
+    description:
+      "A .NET project designed to demonstrate building a Blazor application that manipulates the state of a complex UI.",
+    href: "https://github.com/chrisjamiecarter/memory-game",
+    imageSrc: MemoryGameImage,
+    imageAlt: "Memory Game",
+  },
+
+  {
+    name: "Friends Manager",
+    description:
+      "A .NET and React project designed to demonstrate using Redux for handling the state management within the frontend application.",
+    href: "https://github.com/chrisjamiecarter/friends-manager",
+    imageSrc: FriendsManagerImage,
+    imageAlt: "Friends Manager",
+  },
+  {
+    name: "Sleep Tracker",
+    description:
+      "A .NET and Angular project designed to demonstrate using Angular Material to build the UI components.",
+    href: "https://github.com/chrisjamiecarter/sleep-tracker",
+    imageSrc: SleepTrackerImage,
+    imageAlt: "Sleep Tracker",
+  },
+  {
+    name: "Product Management System",
+    description:
+      "A .NET project designed to demonstrate role based authentication and authorisation with ASP.NET Core Identity.",
+    href: "https://github.com/chrisjamiecarter/product-management-system",
+    imageSrc: ProductManagementSystemImage,
+    imageAlt: "Product Management System",
+  },
+  {
+    name: "Budget",
+    description:
+      "A .NET project designed to demonstrate role based authentication and authorisation with ASP.NET Core Identity.",
+    href: "https://github.com/chrisjamiecarter/budget",
+    imageSrc: BudgetImage,
+    imageAlt: "Budget",
+  },
+];
+
 const Projects = () => {
-  const callouts = [
-    {
-      name: "Project 1",
-      description: "TODO",
-      imageSrc: "",
-      imageAlt: "TODO",
-      href: "#",
-    },
-    {
-      name: "Project 2",
-      description: "TODO",
-      imageSrc: "",
-      imageAlt: "TODO",
-      href: "#",
-    },
-    {
-      name: "Project 3",
-      description: "TODO",
-      imageSrc: "",
-      imageAlt: "TODO",
-      href: "#",
-    },
-  ];
+  const projectElements = projects.map((project) => (
+    <Project key={project.name} {...project} />
+  ));
 
   return (
-    <section id="projects">
-      <div className="bg-gray-100">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
-            <h2 className="text-2xl font-bold text-gray-900">Projects</h2>
+    <section id="projects" className="bg-white">
+      <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+        <Divider />
+        <div className="mx-auto max-w-prose text-center py-16 sm:py-24 lg:py-32">
+          <h1 className="text-4xl font-bold text-sky-500 sm:text-5xl">
+            What I have done
+          </h1>
 
-            <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
-              {callouts.map((callout) => (
-                <div key={callout.name} className="group relative">
-                  <img
-                    alt={callout.imageAlt}
-                    src={callout.imageSrc}
-                    className="w-full rounded-lg bg-white object-cover group-hover:opacity-75 max-sm:h-80 sm:aspect-2/1 lg:aspect-square"
-                  />
-                  <h3 className="mt-6 text-sm text-gray-500">
-                    <a href={callout.href}>
-                      <span className="absolute inset-0" />
-                      {callout.name}
-                    </a>
-                  </h3>
-                  <p className="text-base font-semibold text-gray-900">
-                    {callout.description}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
+          <p className="mt-4 text-base text-pretty text-slate-700 sm:text-lg/relaxed">
+            I love to build and contribute. Here are some of my projects.
+          </p>
+        </div>
+        <div className="space-y-12 lg:grid lg:grid-cols-2 lg:gap-x-6 lg:space-y-6">
+          {projectElements}
         </div>
       </div>
     </section>
