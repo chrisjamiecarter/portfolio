@@ -39,7 +39,7 @@ const Skills = () => {
             of my skills.
           </p>
 
-          <div className="mt-4 flex flex-wrap justify-center gap-4 sm:mt-6">
+          <div className="pt-4 flex flex-wrap justify-center gap-4 sm:mt-6">
             {skillElements}
           </div>
         </div>
