@@ -138,7 +138,7 @@ const Projects = () => {
 
             <p className="mt-4 text-base text-pretty text-slate-700 sm:text-lg/relaxed">
               I love to build personal projects as well as contribute to
-              community projects.
+              community projects. Here are some of my personal projects.
             </p>
           </div>
           <div className="pt-4 sm:mt-6 space-y-12 lg:grid lg:grid-cols-2 lg:gap-x-6 lg:space-y-6">

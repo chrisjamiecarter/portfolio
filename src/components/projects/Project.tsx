@@ -23,7 +23,7 @@ const Project = ({
   });
 
   return (
-    <article className="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-xs">
+    <article className="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
       <img
         alt={imageAlt}
         src={imageSrc}
@@ -33,7 +33,7 @@ const Project = ({
         <a href={href} target="_blank" rel="noopener noreferrer">
           <div className="flex gap-2 items-center">
             <Github />
-            <h3 className="text-lg font-medium text-slate-900">{name}</h3>
+            <h3 className="text-lg font-medium text-slate-700">{name}</h3>
           </div>
         </a>
         <p className="mt-2 line-clamp-3 text-sm/relaxed text-slate-500">

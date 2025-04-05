@@ -31,7 +31,7 @@ const Header = () => {
           <button
             type="button"
             onClick={() => setMobileMenuOpen(true)}
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5">
+            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 cursor-pointer">
             <span className="sr-only">Open main menu</span>
             <Bars3Icon aria-hidden="true" className="size-6" />
           </button>
@@ -59,12 +59,12 @@ const Header = () => {
               href="#"
               className="flex gap-2 items-center font-semibold sm:hidden">
               <Logo className="h-8 w-auto" />
-              <span className="font-semibold text-gray-900">Chris Carter</span>
+              <span className="font-semibold text-slate-700">Chris Carter</span>
             </a>
             <button
               type="button"
               onClick={() => setMobileMenuOpen(false)}
-              className="-m-2.5 rounded-md p-2.5 text-slate-700">
+              className="-m-2.5 rounded-md p-2.5 text-slate-700 cursor-pointer">
               <span className="sr-only">Close menu</span>
               <XMarkIcon aria-hidden="true" className="size-6" />
             </button>
@@ -73,19 +73,19 @@ const Header = () => {
             <div className="space-y-2">
               <a
                 href="#about"
-                className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-slate-700 hover:bg-gray-50"
+                className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-slate-700 hover:bg-sky-100"
                 onClick={() => setMobileMenuOpen(false)}>
                 About
               </a>
               <a
                 href="#skills"
-                className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-slate-700 hover:bg-gray-50"
+                className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-slate-700 hover:bg-sky-100"
                 onClick={() => setMobileMenuOpen(false)}>
                 Skills
               </a>
               <a
                 href="#projects"
-                className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-slate-700 hover:bg-gray-50"
+                className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-slate-700 hover:bg-sky-100"
                 onClick={() => setMobileMenuOpen(false)}>
                 Projects
               </a>
